@@ -1,0 +1,78 @@
+@import 'settings';
+@import 'foundation-emails';
+
+.header{
+	position: relative;
+	.navigation{
+		margin-bottom: 25px;
+		item{
+			padding-top: 5px;
+		}
+		&__item{
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: bold;
+			color: #151515;
+		}
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		height: 3px;
+	}
+}
+
+
+.sub-header{
+	& h4{
+		font-weight: bold;
+		line-height: 1;
+		text-transform: uppercase;
+		position: relative;
+		letter-spacing: 2px;
+		z-index: 99999;
+		background:  url('../assets/img/icon.png') no-repeat left bottom ;
+	} 
+}
+.shadow{
+	border-top: 1px solid #d5d5d4;
+	background:  url('../assets/img/shadow.png') repeat-x left bottom ;
+}
+.divider{
+	border-bottom: 1px solid #bfbfc1;
+}
+.details{
+	color: #161616;
+	&__center{
+		border-right: 1px solid #bfbfc1;
+		border-left: 1px solid #bfbfc1;
+	}
+	@media only screen and (max-width: #{$global-breakpoint}) {
+			&__title{
+				border-right: none;
+				border-left: none;
+				margin-bottom: 10px;
+			}
+		}
+}
+
+.socials{
+	background-color: #f0f0f0 !important;
+	&__title{
+		margin-bottom: 0;
+		border-right: 2px solid #b9b9b9;
+		a{
+			margin: 0;
+		}
+	}
+	@media only screen and (max-width: #{$global-breakpoint}) {
+			&__title{
+				border-right: none;
+				margin-bottom: 10px;
+			}
+		}
+}
+.container.payment{
+	background-color: #f0f0f0 !important;
+}
